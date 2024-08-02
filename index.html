@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barokah Frozen Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Barokah Frozen Food</h1>
+    </header>
+    <main>
+        <section id="brands">
+            <h2>Pilih Merk</h2>
+            <button class="brand-btn" onclick="showProducts('brand1')">
+                <i class="fas fa-fish"></i> Brand 1
+            </button>
+            <button class="brand-btn" onclick="showProducts('brand2')">
+                <i class="fas fa-drumstick-bite"></i> Brand 2
+            </button>
+            <button class="brand-btn" onclick="showProducts('brand3')">
+                <i class="fas fa-ice-cream"></i> Brand 3
+            </button>
+            <!-- Add more brand buttons as needed -->
+        </section>
+        <section id="products" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Produk</h2>
+                <div id="product-list"></div>
+                <button id="checkout-btn">
+                    <i class="fas fa-shopping-cart"></i> Checkout
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
